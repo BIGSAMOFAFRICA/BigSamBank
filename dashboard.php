@@ -14,15 +14,6 @@ $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();
 
-// Fetch last 5 transactions (example)
-// $transactions = [];
-// $txn_stmt = $conn->prepare("SELECT * FROM transactions WHERE sender_id = ? OR receiver_id = ? ORDER BY date DESC LIMIT 5");
-// $txn_stmt->bind_param("ii", $user_id, $user_id);
-// $txn_stmt->execute();
-// $txn_result = $txn_stmt->get_result();
-// while ($row = $txn_result->fetch_assoc()) {
-//     $transactions[] = $row;
-// }
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -3,7 +3,7 @@ session_start();
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "bank_app";
+$db   = "banks_app";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
